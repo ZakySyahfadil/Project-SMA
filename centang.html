@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centang</title>
+    <style>
+        @font-face {
+            font-family: "Gothic";
+            src: url(Font/League-Gothic/LeagueGothic-Regular.otf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(82, 82, 82);
+        }
+
+        .back {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(133, 133, 133);
+            line-height: 30px;
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            border: 3px solid #7fffd4;
+            border-radius: 40%;
+            cursor: pointer;
+        }
+
+        .back a {
+            width: 30px;
+            height: 30px;
+            text-decoration: none;
+            font-family: 'Lucida Sans';
+            color: aliceblue;
+        }
+
+        .back a:hover {
+            color: red;
+            transition: 1s;
+        }
+
+        .bulat {
+            background-color: #7fffd4;
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            box-sizing: border-box;
+            border-radius: 50%;
+            padding-top: 150px;
+            padding-right: 100px;
+            position: relative;
+        }
+
+        .kecil {
+            background-color: white;
+            width: 80px;
+            height: 25px;
+            margin: auto;
+            transform: rotate(40deg);
+        }
+
+        .besar {
+            background-color: white;
+            width: 150px;
+            height: 25px;
+            margin: auto;
+            position: absolute;
+            top: 133px;
+            right: 48px;
+            transform: rotate(130deg);
+        }
+
+        .berhasil {
+            color: aliceblue;
+            font-family: "Gothic";
+            font-size: 50px;
+            text-align: center;
+            cursor: default;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <a href="login.html">
+            <div class="lagi">X</div>
+        </a>
+    </div>
+    <div class="bulat" id="play">
+        <div class="kecil"></div>
+        <div class="besar"></div>
+    </div>
+    <div class="berhasil"> Anda Telah Mengubah Password Anda</div>
+
+    <script>
+        let play = document.getElementById("play")
+        function playMusic() {
+            let audio = new Audio("suara/hapi.mp3");
+            audio.play()
+        }
+        play.addEventListener("click", playMusic);
+    </script>
+</body>
+
+</html>

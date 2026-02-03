@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lupa</title>
+    <style>
+        @font-face {
+            font-family: "Gothic";
+            src: url(Font/League-Gothic/LeagueGothic-Regular.otf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(21, 19, 19);
+            color: white;
+        }
+
+        .back {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(0, 0, 0);
+            line-height: 30px;
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            border: 3px solid rgb(95, 255, 27);
+            border-radius: 40%;
+            cursor: pointer;
+        }
+
+        .back a {
+            width: 30px;
+            height: 30px;
+            text-decoration: none;
+            font-family: 'Lucida Sans';
+            color: aliceblue;
+        }
+
+        .back a:hover {
+            color: red;
+            transition: 1s;
+        }
+
+        .kotak {
+            width: 400px;
+            height: 230px;
+            border: 5px solid rgb(3, 234, 19);
+            margin: 10% auto;
+            border-radius: 80px;
+        }
+
+        input {
+            width: 92%;
+            margin: 2px;
+            padding: 8px;
+            border: none;
+            border-radius: 10px;
+            border: 2px solid black;
+            cursor: text;
+        }
+
+        .mail {
+            font-family: "Gothic";
+            font-size: 30px;
+            margin-top: 40px;
+            cursor: default;
+            text-align: center;
+        }
+
+        .next {
+            width: 40%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: rgb(255, 234, 0);
+            margin: 5% auto;
+            text-align: center;
+        }
+
+        .next a {
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .berikut {
+            border-radius: 20px;
+        }
+
+        .berikut:hover {
+            background-color: rgb(255, 170, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <a href="login.html">
+            <div class="lagi">X</div>
+        </a>
+    </div>
+    <div class="kotak">
+        <div class="mail"> Masukkan Email Anda<input type="email" placeholder="Akun@gmail.com"></div>p
+        <div class="next">
+            <a href="kode.html">
+                <div class="berikut">NEXT</div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

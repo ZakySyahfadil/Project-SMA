@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(82, 82, 82);
+        }
+
+        .back {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(133, 133, 133);
+            line-height: 30px;
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            border: 3px solid #7fffd4;
+            border-radius: 40%;
+            cursor: pointer;
+        }
+
+        .back a {
+            width: 30px;
+            height: 30px;
+            text-decoration: none;
+            font-family: 'Lucida Sans';
+            color: aliceblue;
+        }
+
+        .back a:hover {
+            color: red;
+            transition: 1s;
+        }
+
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            width: 200px;
+            margin-left: 40px;
+            margin-top: 50px;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+            transition: .5s;
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <a href="lobby.html">
+            <div class="lagi">X</div>
+        </a>
+    </div>
+
+    <button class="button" onmousedown="sound1.play()">Kerja Bagus</button>
+    <button class="button" onmousedown="sound2.play()">Ayo Pukul</button>
+    <button class="button" onmousedown="sound3.play()">Omagaaa</button>
+    <button class="button" onmousedown="sound4.play()">WhatTheHell</button>
+    <button class="button" onmousedown="sound5.play()">Subwey</button>
+    <button class="button" onmousedown="sound6.play()">Biasalah</button>
+    <button class="button" onmousedown="sound7.play()">Onii-Chan</button>
+    <button class="button" onmousedown="sound8.play()">Naruto</button>
+    <button class="button" onmousedown="sound9.play()">China Rap</button>
+    <button class="button" onmousedown="sound10.play()">J Goblin</button>
+    <button class="button" onmousedown="sound11.play()">Super Idol</button>
+    <button class="button" onmousedown="sound12.play()">Tokyo Drift</button>
+    <button class="button" onmousedown="sound13.play()">Sad Violin</button>
+    <button class="button" onmousedown="sound14.play()">Teri Teri</button>
+    <button class="button" onmousedown="sound15.play()">Social Credit</button>
+
+    <script>
+        var sound1 = new Audio();
+        sound1.src = "suara/kerjabagus.mp3";
+        var sound2 = new Audio();
+        sound2.src = "suara/ayopukul.mp3";
+        var sound3 = new Audio();
+        sound3.src = "suara/omaga.mp3";
+        var sound4 = new Audio();
+        sound4.src = "suara/whatthe.mp3";
+        var sound5 = new Audio();
+        sound5.src = "suara/subwey.mp3";
+        var sound6 = new Audio();
+        sound6.src = "suara/biasalah.mp3";
+        var sound7 = new Audio();
+        sound7.src = "suara/oniichan.mp3";
+        var sound8 = new Audio();
+        sound8.src = "suara/naruto.mp3";
+        var sound9 = new Audio();
+        sound9.src = "suara/china.mp3";
+        var sound10 = new Audio();
+        sound10.src = "suara/japanese.mp3";
+        var sound11 = new Audio();
+        sound11.src = "suara/superidol.mp3";
+        var sound12 = new Audio();
+        sound12.src = "suara/tokyodrift.mp3";
+        var sound13 = new Audio();
+        sound13.src = "suara/sadviolin.mp3";
+        var sound14 = new Audio();
+        sound14.src = "suara/teri.mp3";
+        var sound15 = new Audio();
+        sound15.src = "suara/socialcredit.mp3"; 
+    </script>
+</body>
+
+</html>

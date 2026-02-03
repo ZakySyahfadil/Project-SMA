@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby</title>
+    <style>
+        @font-face {
+            font-family: "Gothic";
+            src: url(Font/League-Gothic/LeagueGothic-Regular.otf);
+        }
+
+        @font-face {
+            font-family: "Cooper";
+            src: url(Font/cooper-hewitt/CooperHewitt-Bold.otf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(21, 19, 19);
+            color: white;
+        }
+
+        .back {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(0, 0, 0);
+            line-height: 30px;
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            border: 3px solid rgb(95, 255, 27);
+            border-radius: 40%;
+            cursor: pointer;
+        }
+
+        .back a {
+            width: 30px;
+            height: 30px;
+            text-decoration: none;
+            font-family: 'Lucida Sans';
+            color: aliceblue;
+        }
+
+        .back a:hover {
+            color: red;
+            transition: 1s;
+        }
+
+        .akun {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .icon {
+            border-radius: 10px;
+        }
+
+        .icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .icon:hover {
+            background-color: white;
+            transition: 1.2s;
+        }
+
+        .beda {
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0);
+            z-index: 999;
+        }
+
+        .beda:target {
+            width: auto;
+            height: auto;
+            bottom: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.105);
+            transition: 1s;
+        }
+
+        .beda:target .kotak {
+            width: 400px;
+            height: 205px;
+            background-color: rgb(125, 125, 125);
+            border-radius: 15px;
+            position: absolute;
+            right: 10px;
+            top: 55px;
+            box-shadow: -15px 15px 8px rgba(0, 0, 0, 0.7);
+            cursor: default;
+            transition: 1s;
+        }
+
+        .beda:target .kotak .atas {
+            width: 380px;
+            height: 120px;
+            background-color: rgb(199, 199, 199);
+            border-radius: 15px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            box-shadow: -5px 5px 8px rgb(95, 95, 95);
+        }
+
+        .atas img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            margin-right: 75%;
+            margin-top: 3%;
+            box-shadow: -1px 1px 10px rgb(95, 95, 95);
+        }
+
+        .atas .pengguna {
+            font-family: "Cooper";
+            font-size: 20px;
+            color: rgb(15, 15, 15);
+            position: absolute;
+            top: 30px;
+            left: 98px;
+        }
+
+        .atas .mail {
+            font-family: "Cooper";
+            font-size: 13px;
+            color: rgb(87, 87, 87);
+            position: absolute;
+            top: 55px;
+            left: 98px;
+        }
+
+        .bawah {
+            width: 380px;
+            height: 60px;
+            background-color: rgb(199, 199, 199);
+            border-radius: 15px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin: auto;
+            box-shadow: -5px 5px 8px rgb(95, 95, 95);
+        }
+
+        .keluar {
+            color: rgb(26, 26, 26);
+            width: 50px;
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+
+        .keluar img {
+            height: 25px;
+            width: 25px;
+            position: relative;
+            top: 10px;
+            float: left;
+        }
+
+        .bawah a .ex {
+            font-size: 17px;
+            position: relative;
+            bottom: 18px;
+            left: 35px;
+        }
+
+        .bawah:hover {
+            background-color: rgb(161, 161, 161);
+            transition: .4s;
+        }
+
+        .urut {
+            margin-top: 60px;
+            margin-left: 40px;
+            height: 400px;
+            padding: 10px;
+        }
+
+        .urut ul li {
+            margin: 20px;
+        }
+
+        .urut ul li a {
+            text-decoration: none;
+            color: azure;
+            font-size: 55px;
+            font-family: "Gothic";
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .urut ul li a:hover {
+            color: rgb(4, 255, 121);
+            transition: .3s;
+            margin-left: 15px;
+        }
+
+        .urut:hover ul li a {
+            transition: .3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" urut">
+        <ul type="none">
+            <li><a href="profile.html">PROFILE CARD</a></li>
+            <li><a href="jurnal.html">JURNAL</a></li>
+            <li><a href="NAudio.html">AUDIO</a></li>
+        </ul>
+    </div>
+
+    <div class="strs">
+        <a href="#lobby" class="akun">
+            <div class="icon">
+                <img src="Foto/avatar.png" alt="icon">
+            </div>
+
+            <div class="beda" id="lobby">
+                <div class="back">
+                    <div class="kotak">
+                        <div class="atas">
+                            <img src="Foto/profilekosong.png" alt="profile">
+                            <p class="pengguna">Ahmad Ronaldo</p>
+                            <p class="mail">RonaldoGoat@gmail.com</p>
+                        </div>
+                        <div class="bawah">
+                            <a href="login.html">
+                                <div class="keluar">
+                                    <img src="Foto/icons8-exit-50.png" alt="exit">
+                                    <div class="ex"">Keluar</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</body>
+
+</html>

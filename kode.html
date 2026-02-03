@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kode</title>
+    <style>
+        @font-face {
+            font-family: "Gothic";
+            src: url(Font/League-Gothic/LeagueGothic-Regular.otf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(21, 19, 19);
+            color: white;
+        }
+
+        .kotak {
+            width: 500px;
+            height: 320px;
+            border: 5px solid rgb(3, 234, 19);
+            border-radius: 80px;
+            margin: 20px auto;
+
+        }
+
+        .pesan {
+            text-align: center;
+            font-family: "Gothic";
+            font-size: 50px;
+            margin-top: 30px;
+            cursor: default;
+        }
+
+        .urutan {
+            margin-left: 25px;
+        }
+
+        .urutan ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        .urutan ul li input {
+            font-size: 400%;
+        }
+
+        input {
+            width: 10%;
+            height: 70px;
+            margin: 2px;
+            padding: 8px;
+            border: none;
+            border-radius: 10px;
+            cursor: text;
+            text-align: center;
+            font-weight: 1000px;
+        }
+
+        .back {
+            margin-top: 40px;
+            margin-left: 40px;
+            width: 150px;
+            text-align: center;
+            font-family: "Gothic";
+            background-color: rgb(255, 234, 0);
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 25px;
+            letter-spacing: 2px;
+            float: left;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .balik {
+            border-radius: 50px;
+        }
+
+        .balik:hover {
+            background-color: rgb(255, 0, 0);
+            transition: 1s;
+        }
+
+        .lanjut {
+            margin-top: 40px;
+            margin-right: 40px;
+            width: 150px;
+            text-align: center;
+            font-family: "Gothic";
+            background-color: rgb(255, 234, 0);
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 25px;
+            letter-spacing: 2px;
+            float: right;
+        }
+
+        .lanjut a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .login {
+            border-radius: 50px;
+        }
+
+        .login:hover {
+            background-color: rgb(255, 153, 0);
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kotak">
+        <div class="pesan">Masukkan Kode OTP</div>
+        <div class="urutan">
+            <ul class="urut">
+                <li><input type="text" maxlength="1"></li>
+                <li><input type="text" maxlength="1"></li>
+                <li><input type="text" maxlength="1"></li>
+                <li><input type="text" maxlength="1"></li>
+                <li><input type="text" maxlength="1"></li>
+            </ul>
+        </div>
+        <div class="back">
+            <a href="lupa.html">
+                <div class="balik">BACK</div>
+            </a>
+        </div>
+        <div class="lanjut">
+            <a href="centang.html">
+                <div class="login">NEXT</div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
